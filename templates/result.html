@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Página 2 {% endblock %}</h1>
+
+    <div>
+
+    {% for row in data %}
+        <a href="#">
+            <h5> {{ row[1] }}</h5>
+        </a>
+       <!-- <span class="badge badge-primary">{{ row['songname'] }}</span> -->
+        <hr>
+    {% endfor %}
+
+    </div>
+{% endblock %}
