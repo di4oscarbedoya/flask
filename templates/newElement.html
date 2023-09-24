@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Canciones {% endblock %}</h1>
+     
+    <hr>
+
+
+<h2> Crear un producto nuevo </h2>
+    <h3> producto </h3>
+    <form action="/create" method="post">
+      <input type="text" name="name" placeholder="Name">
+      <input type="text" name="price" placeholder="Price">
+      <input type="submit" value="Create">
+    </form>
+
+
+ {% endblock %}
